@@ -1,0 +1,7 @@
+
+//PUTTY EXPORT DB 
+sudo mysqldump -u root -p faz_maraba | gzip > /var/www/FAZ_MARABA_DBNAME.sql.gz
+
+
+//PUTTY IMPORT DB 
+sudo mysql -u root -p faz_maraba_2 < faz_maraba.sql.sql
